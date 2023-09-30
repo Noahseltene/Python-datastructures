@@ -2,39 +2,40 @@
 
 tel = {'jack': 4098, 'sape': 4139}
 tel['guido'] = 4127
-tel
-## output {'jack': 4098, 'sape': 4139, 'guido': 4127}
-tel['jack']
-## output 4098
+print(tel)
+# output {'jack': 4098, 'sape': 4139, 'guido': 4127}
+print(tel['jack'])
+# output 4098
 del tel['sape']
+print(tel)
 tel['irv'] = 4127
-tel
-## output {'jack': 4098, 'guido': 4127, 'irv': 4127}
-list(tel)
+print(tel)
+# output {'jack': 4098, 'guido': 4127, 'irv': 4127}
+print(list(tel))
 ['jack', 'guido', 'irv']
-sorted(tel)
-##output ['guido', 'irv', 'jack']
-'guido' in tel
-##output True
-'jack' not in tel
-##output False
+print(sorted(tel))
+# output ['guido', 'irv', 'jack']
+print('guido' in tel)
+# output True
+print('jack' not in tel)
+# output False
 
 
-## Dict comprehensions
-{x: x**2 for x in (2, 4, 6)}
-##output {2: 4, 4: 16, 6: 36}
+# Dict comprehensions
+print({x: x**2 for x in (2, 4, 6)})
+# output {2: 4, 4: 16, 6: 36}
 
 
-## Looping techniques
+# Looping techniques
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 for k, v in knights.items():
     print(k, v)
 
-## output gallahad the pure
-## output robin the brave
+# output gallahad the pure
+# output robin the brave
 
 
-#using enumerate method
+# using enumerate method
 for i, v in enumerate(['tic', 'tac', 'toe']):
     print(i, v)
 """
@@ -46,7 +47,7 @@ for i, v in enumerate(['tic', 'tac', 'toe']):
 """
 
 
-## using the zip method
+# using the zip method
 
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
